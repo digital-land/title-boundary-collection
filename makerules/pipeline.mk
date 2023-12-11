@@ -71,21 +71,6 @@ ifeq ($(EXPECTATION_DIR),)
 EXPECTATION_DIR = expectations/
 endif
 
-ifeq ($(PIPELINE_CONFIG_FILES),)
-PIPELINE_CONFIG_FILES=\
-	$(PIPELINE_DIR)column.csv\
-	$(PIPELINE_DIR)combine.csv\
-	$(PIPELINE_DIR)concat.csv\
-	$(PIPELINE_DIR)convert.csv\
-	$(PIPELINE_DIR)default.csv\
-	$(PIPELINE_DIR)default-value.csv\
-	$(PIPELINE_DIR)filter.csv\
-	$(PIPELINE_DIR)lookup.csv\
-	$(PIPELINE_DIR)patch.csv\
-	$(PIPELINE_DIR)skip.csv\
-	$(PIPELINE_DIR)transform.csv
-endif
-
 define run-pipeline
 	mkdir -p $(@D) $(ISSUE_DIR)$(notdir $(@D)) $(COLUMN_FIELD_DIR)$(notdir $(@D)) $(DATASET_RESOURCE_DIR)$(notdir $(@D))
 	digital-land --dataset $(notdir $(@D)) $(DIGITAL_LAND_FLAGS) pipeline $(1) --issue-dir $(ISSUE_DIR)$(notdir $(@D)) --column-field-dir $(COLUMN_FIELD_DIR)$(notdir $(@D)) --dataset-resource-dir $(DATASET_RESOURCE_DIR)$(notdir $(@D)) $(PIPELINE_FLAGS) $< $@
