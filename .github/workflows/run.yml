@@ -11,6 +11,7 @@ jobs:
         run: |
           sudo apt-get install git-lfs
           git lfs install
+          git lfs pull
  
   call-workflow:
     uses: digital-land/collection-template/.github/workflows/callable_run.yml@main
