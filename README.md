@@ -1,9 +1,9 @@
 # Title Boundary collection
 
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/digital-land/XXX/blob/main/LICENSE)
-[![Run pipeline](https://github.com/digital-land/XXX-collection/actions/workflows/run.yml/badge.svg)](https://github.com/digital-land/XXX-collection/actions/workflows/run.yml)
+[![Run pipeline](https://github.com/digital-land/title-boundary-collection/actions/workflows/run.yml/badge.svg)](https://github.com/digital-land/title-boundary-collection/actions/workflows/run.yml)
 
-The data and pipeline to build the [XXX dataset](https://www.digital-land.info/dataset/XXX).
+The data and pipeline to build the [title boundary dataset](https://www.digital-land.info/dataset/title-boundary).
 
 # Collection
 
