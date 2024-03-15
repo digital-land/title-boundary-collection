@@ -21,6 +21,7 @@ var/
 specification/
 
 # stored in S3
+collection/log/
 collection/resource/
 dataset/
 transformed/
